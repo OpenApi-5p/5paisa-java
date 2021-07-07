@@ -75,7 +75,7 @@ public class ApiCalls {
 		final JSONObject body = new JSONObject();
 		requestBody = ipConfig(requestBody);
 		JSONObject requestHead = new JSONObject();
-		requestHead = header(rc, AES.encrypt(config.getUserId()), AES.encrypt(config.getPassword()),config);
+		requestHead = header(rc, AES.encrypt(config.getUserId(), config), AES.encrypt(config.getPassword(),config ),config);
 		body.put("body", requestBody);
 		body.put("head", requestHead);
 		Response ressonse = apiCall(url, body, rc,config);
@@ -102,9 +102,9 @@ public class ApiCalls {
 
 	public Response callLogin(JSONObject requestBody, String url, String rc,AppConfig config) throws IOException, ParseException {
          
-		requestBody.put("Email_id",AES.encrypt(properties.getEmailId()));
-		requestBody.put("My2PIN", AES.encrypt(properties.my2Pin));
-		requestBody.put("Password", AES.encrypt(properties.Password));
+		requestBody.put("Email_id",AES.encrypt(properties.getEmailId(), config));
+		requestBody.put("My2PIN", AES.encrypt(properties.my2Pin, config));
+		requestBody.put("Password", AES.encrypt(properties.Password, config));
 		Response resonse = apiCall(url, requestBody,rc,config);
 		return resonse;
 	}

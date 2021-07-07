@@ -18,16 +18,14 @@ import static org.junit.Assert.assertTrue;
 
 public class test2 {
   
-	AppConfig config = new AppConfig(); 
-	RestClient apis = new RestClient(config);
-	JSONParser parser = new JSONParser();
-	Properties properties = new Properties();
-	
+	private AppConfig config;
+	private RestClient apis;
+	private Properties properties;
 	
 	public void setConfig()
 	{
-		
-		AppConfig config = new AppConfig();
+		properties = new Properties();
+		config = new AppConfig();
 		config.setAppName("5P57201044");
 		config.setAppVer("1.0");
 		config.setOsName("WEB");
@@ -36,7 +34,7 @@ public class test2 {
 		config.setLoginId("56565401");
 		config.setUserId("GeUcdt8KE51");
 		config.setPassword("lrBDcHCp2MN");
-		
+		apis = new RestClient(config);
 	}
 
 	@Test
@@ -49,12 +47,12 @@ public class test2 {
 		//obj2.put("Email_id", AES.encrypt(properties.emailId));
 		//obj2.put("Password", AES.encrypt(properties.Password));
 		//obj2.put("My2PIN", AES.encrypt(properties.my2Pin));
-		obj2.put("HDSerialNumber", "1.0.16.0");
-		obj2.put("MACAddress", "1.0.16.0");
+		obj2.put("HDSerialNumber", "");
+		obj2.put("MACAddress", "48-89-E7-D5-7B-76");
 		obj2.put("RequestNo", 1);
 		obj2.put("ConnectionType", 1);
-		obj2.put("MachineID","machineID");
-		obj2.put("VersionNo", "1.0");
+		obj2.put("MachineID","421JRV2");
+		obj2.put("VersionNo", "1.7");
 		//System.out.println("\n JSON OBJ >> " + obj2.toJSONString());
 		Response response = apis.LoginRequestV2(obj2);
 		System.out.println("\n Response >> " + response.body().string());

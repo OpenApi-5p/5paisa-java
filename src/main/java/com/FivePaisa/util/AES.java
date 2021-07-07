@@ -18,8 +18,7 @@ public class AES {
 	//static String password = "wbAWVw3emgl4ywb2qY8guIG1TtnkLXxw2NWAPzY5yFbnUDl0Ibw05IEWRs4fDdY4";
 	//static String encrypKey = "huYC5GA05MzDAJVJpSbtinpkJXIpMzCS";
 	static Properties pr = new Properties();
-	static AppConfig config = new AppConfig();
-	public static String encrypt(String data) {
+	public static String encrypt(String data, AppConfig config ) {
 		try {
 			char[] passwordchars = config.getEncryptKey().toCharArray();
 			SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
@@ -44,7 +43,7 @@ public class AES {
 		return null;
 	}
 
-	public static String decrypt(String data) {
+	public static String decrypt(String data, AppConfig config) {
 		try {
 			char[] passwordchars = config.getEncryptKey().toCharArray();
 			SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA1");
