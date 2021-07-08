@@ -17,7 +17,7 @@ public class Properties {
 	
 	public  String requestCodeModifySmoOrder = "5PSModMOOrd";
 	
-	public  String holding = "5PMarginV3";
+	public  String holding = "5PHoldingV2";
 
 	public  String marketFeed = "5PMF";
 
