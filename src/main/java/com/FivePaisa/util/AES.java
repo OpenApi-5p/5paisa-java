@@ -15,8 +15,6 @@ import com.FivePaisa.service.Properties;
 public class AES {
 
 	static byte[] salt = { 83, 71, 26, 58, 54, 35, 22, 11, 83, 71, 26, 58, 54, 35, 22, 11 };
-	//static String password = "wbAWVw3emgl4ywb2qY8guIG1TtnkLXxw2NWAPzY5yFbnUDl0Ibw05IEWRs4fDdY4";
-	//static String encrypKey = "huYC5GA05MzDAJVJpSbtinpkJXIpMzCS";
 	static Properties pr = new Properties();
 	static AppConfig config = new AppConfig();
 	public static String encrypt(String data) {
