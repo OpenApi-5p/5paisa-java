@@ -3,21 +3,21 @@ package com.FivePaisa.config;
 public class AppConfig {
 	
 	
-	public  String encryptKey = "huYC5GA05MzDAJVJpSbtinpkJXIpMzCS";
+	public  String encryptKey = "Your Encryption Key";
 
-	public  String key = "mid3KQJFM6YFQ3SixJ3ooUxvInSLjY01";
+	public  String key = "Your Key";
 	
 	public  String appVer = "1.0";
 
-	public  String appName = "5P57201044";
+	public  String appName = "Your App Name";
 
 	public  String osName = "WEB";
 	
-	public  String loginId = "56565401";
+	public  String loginId = "Your Client Code";
 
-	public  String userId = "GeUcdt8KE51";
+	public  String userId = "Your User ID";
 	
-	public  String password = "lrBDcHCp2MN";
+	public  String password = "Your Password";
 
 	public String getEncryptKey() {
 		return encryptKey;
