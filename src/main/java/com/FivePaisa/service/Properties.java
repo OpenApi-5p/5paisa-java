@@ -4,9 +4,9 @@ public class Properties {
 	
 	
 	public  int threadTime = 50000;
-	public  String clientcode = "56565401";
+	public  String clientcode = "Your Client Code";
 
-	public  int AppSource = 4057;
+	public  int AppSource = Your App source;
 
 	public  String requestCodeLoginv2 = "5PLoginV2";
 	public  String requestCodeLoginv3 = "5PLoginV3";
@@ -32,14 +32,14 @@ public class Properties {
 	public  String orderBook = "5POrdBkV2";
 
 	public  String netPositionNetWise = "5PNPNWV1";
-	public   String emailId = "anurag.s@live.com";//"qfUBpS1XInAr/L6g/9X3bCB4gwuXoT2HLyrk5WK3QIE=";//"anurag.s@live.com";
-	//public final  String emailId = "anurag.s@live.com";
-	public   String my2Pin = "19880421";//"21041988";
-	//public final  String my2Pin = "21041988";
+	public   String emailId = "Your Email ID";
+	//public final  String emailId = "Your Email ID";
+	public   String my2Pin = "Your My2PIN";//"21041988";
+	//public final  String my2Pin = "Your My2PIN";
 	public   String remoteIpAddress = "192.0.0.0";
 	public   String machineID = "039377 ";
-	public   String Password = "5Paisa@12345";
-//	public final String encryptKey = "huYC5GA05MzDAJVJpSbtinpkJXIpMzCS";
+	public   String Password = "Your Password";
+//	public final String encryptKey = "Your Encryption key";
 	public int getThreadTime() {
 		return threadTime;
 	}
@@ -172,21 +172,5 @@ public class Properties {
 	public void setPassword(String password) {
 		Password = password;
 	}
-
-	//public final String key = "mid3KQJFM6YFQ3SixJ3ooUxvInSLjY01";
-	//public final String key ="wWHETto7ENNRxxERlzVk1pjWK8diYPtT";
-
-	//public final String appVer = "1.0";
-
-	//public final String appName = "5P57201044";
-
-	//public final String osName = "WEB";
-	//public final  String logiId = "56565401";
-
-	//public final  String userId = "GeUcdt8KE51";
-	//public final  String userId ="WMgLXcnvsAd";
-
-	//public final String password = "lrBDcHCp2MN";//
-	//public final String password ="pvI1C6HHirI";
 
 }
