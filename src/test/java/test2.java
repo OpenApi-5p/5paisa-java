@@ -28,14 +28,14 @@ public class test2 {
 	{
 		
 		AppConfig config = new AppConfig();
-		config.setAppName("5P57201044");
+		config.setAppName("");
 		config.setAppVer("1.0");
 		config.setOsName("WEB");
-		config.setEncryptKey("huYC5GA05MzDAJVJpSbtinpkJXIpMzCS");
-		config.setKey("mid3KQJFM6YFQ3SixJ3ooUxvInSLjY01");
-		config.setLoginId("56565401");
-		config.setUserId("GeUcdt8KE51");
-		config.setPassword("lrBDcHCp2MN");
+		config.setEncryptKey("");
+		config.setKey("");
+		config.setLoginId("");
+		config.setUserId("");
+		config.setPassword("");
 		
 	}
 
